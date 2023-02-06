@@ -53,7 +53,7 @@ How many rows were processed by the script?
 - 88,605
 - 190,225
 
-Because after executing the attached script `python etl_web_to_gcs_homework_q4.py` with the stated parameters, the logs tell us that:
+Because after executing the attached script `prefect_github_code/python etl_web_to_gcs_homework_q4.py` with the stated parameters, the logs tell us that:
 ```
 rows: 
 ```
@@ -91,9 +91,8 @@ How many rows were processed by the script?
 
 Prefect Secret blocks provide secure, encrypted storage in the database and obfuscation in the UI. Create a secret block in the UI that stores a fake 10-digit password to connect to a third-party service. Once you’ve created your block in the UI, how many characters are shown as asterisks (*) on the next page of the UI?
 
-- 5
-- 6
 - 8
-- 10
+
+Because the block shows `********`
 
 
