@@ -1,0 +1,22 @@
+2023-02-22 11:40:30.281802 (MainThread): Running with dbt=1.4.1
+2023-02-22 11:40:31.114077 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2023-02-22 11:40:31.127188 (MainThread): Tracking: tracking
+2023-02-22 11:40:31.160405 (MainThread): 11:40:31  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77ac741e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7787e67dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7787e67c70>]}
+2023-02-22 11:40:31.161144 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=33
+2023-02-22 11:40:31.162251 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2023-02-22 11:40:31.162754 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2023-02-22 11:40:31.233826 (Thread-12): 11:40:31  Unable to do partial parsing because saved manifest not found. Starting full parse.
+2023-02-22 11:40:31.234252 (Thread-12): 11:40:31  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4f078f96-f187-4941-ae68-9acb2cdfa2a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7787e7b2b0>]}
+2023-02-22 11:40:31.538417 (Thread-13): handling status request
+2023-02-22 11:40:31.554319 (Thread-13): 11:40:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4f078f96-f187-4941-ae68-9acb2cdfa2a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7787da9e20>]}
+2023-02-22 11:40:31.565174 (Thread-13): sending response (<Response 180 bytes [200 OK]>) to 10.0.190.181
+2023-02-22 11:40:31.941964 (Thread-12): 11:40:31  1699: static parser successfully parsed example/my_second_dbt_model.sql
+2023-02-22 11:40:31.955026 (Thread-12): 11:40:31  1699: static parser successfully parsed example/my_first_dbt_model.sql
+2023-02-22 11:40:32.047485 (Thread-12): 11:40:32  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4f078f96-f187-4941-ae68-9acb2cdfa2a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f778284a280>]}
+2023-02-22 11:40:32.331164 (Thread-14): handling status request
+2023-02-22 11:40:32.331628 (Thread-14): 11:40:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4f078f96-f187-4941-ae68-9acb2cdfa2a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7782848340>]}
+2023-02-22 11:40:32.332115 (Thread-14): sending response (<Response 2018 bytes [200 OK]>) to 10.0.190.181
+2023-02-22 11:40:53.852806 (MainThread): 11:40:53  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7787e67dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77ac741e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7787e7b580>]}
+2023-02-22 11:40:53.853157 (MainThread): 11:40:53  Flushing usage events
+2023-02-22 11:40:53.879778 (MainThread): Runtime Error
+  no dbt_project.yml found at expected path /usr/src/develop/user-172462/environment-169174/repository-129652/homework/week_4_analytics_engineering/dbt_project.yml
